@@ -1,0 +1,25 @@
+Homework 10
+Abby Padilla
+11.15.24
+
+1. PDO - built in class that comes packaged with PHP, making it very easy to interact with databases.
+   Represents and manages the connection to the database, running queries through it. Through these, 
+   PHP is going to take SQL as input and return results from the database and store it in a variable.
+   DSN - Data Source Name - string representing the connection to our database, containing information 
+   about our connection, and should be coming from an .env file–not one sent to github
+2. .env file - file containing environment variables, which are variables whose values are set outside 
+   the program, typically through a functionality built into the operating system. File will exist in 
+   the environment(OS) that the application is running on and set variables specific to the environment.
+   .gitignore file - text file that tells Git which files or folders to ignore in a project
+3. No, passwords of any kind should never be uploaded to github.
+4. SQL injection - hack when a hacker tries to run malicious sql code in a database.
+5. Prepared statements - parameterized and reusable SQL query forcing the developer to write the SQL 
+   command and the user-provided data separately, with the command is executed safely and SQL Injection 
+   vulnerabilities are prevented.
+   Variables can be passed to a prepared statement through prepare, in which an SQL statement template 
+   is created and sent to the database. Certain values are left unspecified, called parameters (labeled 
+   "?%22). The database parses, compiles, and performs query optimization on the SQL statement template, 
+   and stores the result without executing it. Then, execute, at which a later time, the application binds 
+   the values to the parameters, and the database executes the statement. The application may execute the 
+   statement as many times as it wants to with different values, and is much more optimized than running 
+   the base query with different values each time.
